@@ -48,6 +48,7 @@ export default {
       padding 0 170px
       display flex
       max-width  1056px
+      margin 0 auto
       justify-content center
     &__item
       margin-left: 120px
