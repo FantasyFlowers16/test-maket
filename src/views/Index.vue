@@ -11,6 +11,11 @@
     </div>
     <about></about>
     <services></services>
+    <product></product>
+    <plan></plan>
+    <team></team>
+    <blog></blog>
+
   </div>
 </template>
 
@@ -18,10 +23,14 @@
 
 import About from '../components/About'
 import Services from '../components/Services'
+import Product from '../components/Product'
+import Plan from '../components/Plan'
+import Team from '../components/Team'
+import Blog from '../components/Blog'
 
 export default {
   name: 'Index',
-  components: { About, Services }
+  components: { About, Services, Product, Plan, Team, Blog }
 
 }
 </script>

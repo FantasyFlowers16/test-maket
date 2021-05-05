@@ -67,7 +67,7 @@ export default {
   &__item-container
     display flex
     flex-wrap wrap
-    padding 0 115px
+    padding 0 115px 88px 115px
   &-item
     cursor pointer
     width calc(33.3% - 22px)
