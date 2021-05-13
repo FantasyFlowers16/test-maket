@@ -2,60 +2,127 @@
   <div class="b-team text">
     <h2 class="b-team__title">Our Team Member</h2>
     <p class="b-team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-    <div class="b-team-photo">
-      <div class="b-team-photo__item">
-        <div class="b-team-photo__img-container">
-          <img src="../assets/workers/img1.jpg" class="b-team-photo__img">
-        </div>
-        <div class="b-team-photo__name">John Doe</div>
-        <div class="b-team-photo__position">General Manager</div>
-        <div class="b-team-photo__socials-container">
-          <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
-          <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
-           <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
-            <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
-        </div>
-      </div>
-      <div class="b-team-photo__item">
-        <div class="b-team-photo__img-container">
-          <img src="../assets/workers/img2.jpg" class="b-team-photo__img">
-        </div>
-        <div class="b-team-photo__name">Alexa Biru</div>
-      <div class="b-team-photo__position">Office Director</div>
-              <div class="b-team-photo__socials-container">
-          <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
-          <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
-           <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
-            <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
-        </div>
-      </div>
-      <div class="b-team-photo__item">
-        <div class="b-team-photo__img-container">
-          <img src="../assets/workers/img3.jpg" class="b-team-photo__img">
-        </div>
-          <div class="b-team-photo__name">Ronobir Sing</div>
-          <div class="b-team-photo__position">Admin</div>
-                  <div class="b-team-photo__socials-container">
-          <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
-          <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
-           <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
-            <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
-        </div>
-      </div>
-    </div>
+    <swiper :slides-per-view="3" :space-between="50" ref="mySlider" class="swiper-container" >
+        <swiper-slide  class="b-team-photo__item slide">
+          <div class="b-team-photo__img-container">
+            <img src="../assets/workers/img1.jpg" class="b-team-photo__img">
+          </div>
+          <div class="b-team-photo__name">John Doe</div>
+          <div class="b-team-photo__position">General Manager</div>
+          <div class="b-team-photo__socials-container">
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
+              <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="b-team-photo__item slide">
+          <div class="b-team-photo__img-container">
+            <img src="../assets/workers/img2.jpg" class="b-team-photo__img">
+          </div>
+          <div class="b-team-photo__name">Alexa Biru</div>
+        <div class="b-team-photo__position">Office Director</div>
+                <div class="b-team-photo__socials-container">
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
+              <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="b-team-photo__item slide">
+          <div class="b-team-photo__img-container">
+            <img src="../assets/workers/img3.jpg" class="b-team-photo__img">
+          </div>
+            <div class="b-team-photo__name">Ronobir Sing</div>
+            <div class="b-team-photo__position">Admin</div>
+                    <div class="b-team-photo__socials-container">
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
+              <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
+          </div>
+        </swiper-slide>
+        <swiper-slide  class="b-team-photo__item slide">
+          <div class="b-team-photo__img-container">
+            <img src="../assets/workers/img3.jpg" class="b-team-photo__img">
+          </div>
+          <div class="b-team-photo__name">John Doe</div>
+          <div class="b-team-photo__position">General Manager</div>
+          <div class="b-team-photo__socials-container">
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
+              <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="b-team-photo__item slide">
+          <div class="b-team-photo__img-container">
+            <img src="../assets/workers/img1.jpg" class="b-team-photo__img">
+          </div>
+          <div class="b-team-photo__name">Alexa Biru</div>
+        <div class="b-team-photo__position">Office Director</div>
+                <div class="b-team-photo__socials-container">
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
+              <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="b-team-photo__item slide">
+          <div class="b-team-photo__img-container">
+            <img src="../assets/workers/img2.jpg" class="b-team-photo__img">
+          </div>
+            <div class="b-team-photo__name">Ronobir Sing</div>
+            <div class="b-team-photo__position">Admin</div>
+                    <div class="b-team-photo__socials-container">
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--fb"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--tw"></div>
+            <div class="b-team-photo__socials-item b-team-photo__socials-item--ms"></div>
+              <div class="b-team-photo__socials-item b-team-photo__socials-item--round"></div>
+          </div>
+        </swiper-slide>
+    </swiper>
+
   </div>
 </template>
 
 <script>
-
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/swiper-bundle.css'
 export default {
   name: 'Team',
-  components: {}
+  components: { Swiper, SwiperSlide },
+  data () {
+    return {
+      slider: null,
+      swiperOption: {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetweenSlides: 50,
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            initialSlide: 0
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 50
+          },
+          320: {
+            slidesPerView: 1
+          }
+        }
+      }
+    }
+  },
+  mounted () {
+    this.slider = new Swiper(this.$refs.mySlider, this.swiperOption)
+  }
 }
 </script>
 <style lang='stylus'>
 .b-team
-  padding 122px 116px 130px 116px
+  padding 30px 16px 10px 16px
   &__title
     margin-right 10px
   &__text
@@ -63,16 +130,17 @@ export default {
     margin-top 28px
     margin-bottom 120px
     max-width 600px
-    padding 0 46px 0 0px
+    padding 0
     letter-spacing 1.4
   &-photo
+    overflow: hidden
     display flex
     &__item
       border-radius 8px
       width calc(33.3% - 20px)
-      margin-right 30px
-      &:last-child
-        margin-right 20px
+      // margin-right 30px
+      // &:last-child
+      //   margin-right 20px
     &__img-container
       margin-bottom 43px
       height 0
@@ -215,4 +283,9 @@ export default {
         &:after
           opacity 1
           transition opacity .2s ease
+@media screen and (min-width: 1024px)
+  .b-team
+    padding 122px 116px 130px 116px
+    &__text
+      padding 0 46px 0 0px
 </style>

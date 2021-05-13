@@ -30,6 +30,7 @@
         </div>
       </div>
     </div>
+    <button class="b-blog__button button--green" >MORE VIEW</button>
   </div>
 </template>
 
@@ -42,7 +43,7 @@ export default {
 </script>
 <style lang='stylus'>
 .b-blog
-  padding 126px 118px 126px 92px
+  padding 20px
   background-color #e4fdf9
   &__title
     margin-right 10px
@@ -50,20 +51,28 @@ export default {
   &__text
     margin 0 auto
     margin-top 28px
-    margin-bottom 120px
+    margin-bottom 30px
     max-width 600px
     padding 0 46px 0 0px
     font  400 15px/24px 'Open-Sans',sans-serif
     letter-spacing 1.4
+  &__item-container
+    max-width 1415px
+    margin 0 auto
+  &__button
+    margin-right 20px
+    margin-top 50px
+    padding 22px 23px 22px 23px
   &-item
-    display flex
-    &:nth-child(2n)
-      flex-direction row-reverse
+    display block
     &__info
       display flex
       flex-direction column
       align-items flex-start
-      padding 63px 168px 0 32px
+      padding 20px 30px
+    &__img-container
+      width 100%
+      overflow: hidden
     &__data
       margin-top 31px
       display flex
@@ -81,5 +90,18 @@ export default {
       &:hover
         color #00897b
         transition color .2s ease
-
+@media screen and (min-width: 1024px)
+  .b-blog
+    padding 126px 118px 126px 92px
+    &__text
+      margin-bottom 120px
+    &-item
+      display flex
+      &:nth-child(2n)
+        flex-direction row-reverse
+      &__info
+        display flex
+        flex-direction column
+        align-items flex-start
+        padding 63px 168px 0 32px
 </style>

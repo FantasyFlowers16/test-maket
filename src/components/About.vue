@@ -31,33 +31,38 @@ export default {
 </script>
 <style lang='stylus'>
 .b-about
-  padding 122px 0 130px 0
+  padding 60px 0 70px 0
+  max-width 1415px
+  margin 0 auto
   &__title
     margin-right 10px
     font  700 30px/30px 'Open-Sans',sans-serif
   &__text
     margin 0 auto
     margin-top 28px
-    margin-bottom 120px
+    margin-bottom 50px
     max-width 600px
-    padding 0 46px 0 0px
+    padding 0px 20px 0 20px
     font  400 15px/24px 'Open-Sans',sans-serif
     letter-spacing 1.4
   &-icons
     &__container
-      padding 0 170px
+      padding 0 40px
       display flex
       max-width  1056px
       margin 0 auto
       justify-content center
+      flex-direction column
     &__item
-      margin-left: 120px
+      padding 40px 0
       flex-direction column
       justify-content center
       align-items center
       display flex
+      border-top 1px solid #e6e6e6
       &:first-child
         margin-left 0
+        border-top none
     &__title
       font  600 20px/25px 'Open-Sans',sans-serif
       margin-bottom 15px
@@ -82,4 +87,21 @@ export default {
         height 63px
         background url('../assets/head.svg') no-repeat
         background-size cover
+
+@media screen and (min-width: 1024px)
+  .b-about
+    padding 122px 0 130px 0
+    &__text
+      margin-bottom 120px
+      padding 0 46px 0 0px
+    &-icons
+      &__container
+        padding 0 170px
+        flex-direction row
+      &__item
+        margin-left: 120px
+        margin-bottom 0px
+        border-top none
+        padding 0
+
 </style>

@@ -64,7 +64,7 @@ export default {
 </script>
 <style lang='stylus'>
 .b-plan
-  padding 129px 116px 124px 115px
+  padding 40px 30px
   background-color #f0f1f1
   &__title
     margin-right 10px
@@ -73,15 +73,13 @@ export default {
     margin-top 28px
     margin-bottom 120px
     max-width 600px
-    padding 0 46px 0 0px
+    padding 0 5px
   &-price
-    &__container
-      display flex
-      flex-wrap wrap
     &__item-container
+      margin-bottom 30px
       display flex
       flex-direction column
-      width calc(33.3% - 20px)
+      width 100%
       margin-right 20px
       transition box-shadow 1.3s ease
       cursor pointer
@@ -98,10 +96,10 @@ export default {
           transition background-color .2s ease, border .2s ease, color .2s ease
     &__item-down
       background-color white
-      padding 89px 97px 63px 95px
+      padding 20px
     &__item-up
       box-sizing border-box
-      padding 49px 90px 40px 102px
+      padding 40px 20px 20px 30px
       background-color #3949ab
       position relative
       &::before
@@ -122,12 +120,12 @@ export default {
       justify-content center
       align-items center
     &__title
-      font   25px/25px 'Open-Sans',sans-serif
+      font   20px/20px 'Open-Sans',sans-serif
       color white
-      margin-bottom 28px
+      margin-bottom 10px
     &__money
       margin-right 18px
-      font   50px/50px 'Open-Sans',sans-serif
+      font   35px/35px 'Open-Sans',sans-serif
       color white
       position relative
       &:before
@@ -140,8 +138,8 @@ export default {
         top 5px
         left -18px
     &__button
-      margin-top 69px
-      padding  27px 30px 21px 30px
+      margin-top 35px
+      padding  18px 20px
       transition background-color .3s ease, border .3s ease, color .3s ease
       &._active
         color white
@@ -151,4 +149,33 @@ export default {
     &__period
       color white
       font   17px/17px 'Open-Sans',sans-serif
+
+@media screen and (min-width: 1024px)
+  .b-plan
+    padding 129px 116px 124px 115px
+    &__text
+      padding 0 46px 0 0px
+    &-price
+      &__container
+        display flex
+        flex-wrap wrap
+      &__item-container
+        margin-bottom 0
+        width calc(33.3% - 20px)
+        &:last-child
+          margin-right 0
+      &__item-down
+        background-color white
+        padding 89px 97px 63px 95px
+      &__item-up
+        box-sizing border-box
+        padding 49px 90px 40px 102px
+      &__title
+        font   25px/25px 'Open-Sans',sans-serif
+        margin-bottom 28px
+      &__money
+        font   50px/50px 'Open-Sans',sans-serif
+      &__button
+        margin-top 69px
+        padding  27px 30px 21px 30px
 </style>

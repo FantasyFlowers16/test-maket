@@ -18,7 +18,7 @@
       </div>
     </transition>
 
-    <button class="b-pruduct__button-only  button--green">VIEW ALL</button>
+    <button class="b-pruduct__button-only  button--green" >VIEW ALL</button>
   </div>
 </template>
 
@@ -75,26 +75,31 @@ export default {
 </script>
 <style lang='stylus'>
 .b-pruduct
-  padding 100px 80px
+  padding 30px 20px
   &__title
     margin-right 10px
   &__text
     margin 0 auto
     margin-top 28px
-    margin-bottom 120px
+    margin-bottom 60px
     max-width 600px
-    padding 0 46px 0 0px
+    padding 0 10px 0 10px
   &__btn-container
+    justify-content space-between
     display flex
-    justify-content center
-    margin-bottom 119px
+    flex-wrap wrap
+    margin-bottom 50px
   &__button-only
     margin-right 20px
-    margin-top 100px
+    margin-top 40px
     padding 22px 23px 22px 23px
   &__button
+    width calc(50% - 10px)
     margin-right 20px
-    padding 18px 23px 19px 23px
+    padding 12px 18px 12px 18px
+    margin-bottom 10px
+    &:nth-child(2n)
+      margin-right 0
     &:last-child
       margin-right 0
   &-photos
@@ -132,11 +137,11 @@ export default {
       overflow hidden
       position relative
       padding-top: 29.9%
-      width calc(33% - 19.5px)
-      margin-right 29px
+      width calc(50% - 10px)
+      margin-right 20px
       margin-bottom 30px
       cursor pointer
-      &:nth-child(3n)
+      &:nth-child(2n)
         margin-right 0
       &:before
         content ''
@@ -158,7 +163,34 @@ export default {
           &__title, &__type
             opacity 1
             transition opacity .2s ease
-
+@media screen and (min-width: 1024px)
+  .b-pruduct
+    padding 100px 80px
+    &__text
+      margin 0 auto
+      margin-top 28px
+      margin-bottom 120px
+    &__btn-container
+      justify-content center
+      margin-bottom 119px
+      flex-wrap nowrap
+    &__button
+      padding 18px 23px 19px 23px
+      margin-bottom 0
+      &:nth-child(2n)
+        margin-right 20px
+      &:last-child
+        margin-right 0
+    &__button-only
+      margin-top 100px
+    &-photos
+      &__container
+        width calc(33% - 19.5px)
+        margin-right 29px
+        &:nth-child(2n)
+          margin-right 32px
+        &:nth-child(3n)
+          margin-right 0
 .animationFilter-enter-active, .animationFilter-leave-active
   transition: opacity .5s
 

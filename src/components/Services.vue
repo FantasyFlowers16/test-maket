@@ -53,7 +53,7 @@ export default {
 <style lang='stylus'>
 .b-services
   background-color #dafdf9
-  padding 179px 0 0 0
+  padding 60px 0 0 0
   &__title
     margin-right 10px
     font  700 30px/30px 'Open-Sans',sans-serif
@@ -62,20 +62,18 @@ export default {
     margin-top 28px
     margin-bottom 120px
     max-width 600px
-    padding 0 46px 0 0px
+    padding 0 20px
     font  400 15px/24px 'Open-Sans',sans-serif
   &__item-container
-    display flex
-    flex-wrap wrap
-    padding 0 115px 88px 115px
+    padding 0 25px 88px 25px
   &-item
     cursor pointer
-    width calc(33.3% - 22px)
+    width 100%
     background-color white
-    margin-right 33px
-    margin-bottom 33px
+    margin-right 20px
+    margin-bottom 20px
     display flex
-    padding 60px 56px 51px 56px
+    padding 30px 20px 35px 20px
     flex-direction column
     box-sizing border-box
     align-items center
@@ -137,4 +135,21 @@ export default {
             transition opacity .2s ease
             opacity 1
 
+@media screen and (min-width: 1024px)
+  .b-services
+    background-color #dafdf9
+    padding 179px 0 0 0
+    &__text
+      padding 0 46px 0 0px
+    &__item-container
+      display flex
+      flex-wrap wrap
+      padding 0 115px 88px 115px
+    &-item
+      width calc(33.3% - 22px)
+      margin-right 33px
+      margin-bottom 33px
+      padding 60px 56px 51px 56px
+      &:nth-child(3n)
+        margin-right 0
 </style>
