@@ -160,15 +160,15 @@ export default {
       font   15/px 'Open-Sans',sans-serif
     &__socials-container
       display flex
-      padding 0 50px
-      margin-top 32px
+      margin-top 10px
+      flex-direction column
     &__socials-item
-      width 48px
-      height 48px
-      width calc(25% - 19.5px)
+      width 35px
+      height 35px
+      width 100%
       background-color #f0f1f1
       border-radius 4px
-      margin-right 26px
+      margin-right 20px
       cursor pointer
       transition background-color .3s ease
       position relative
@@ -288,4 +288,17 @@ export default {
     padding 122px 116px 130px 116px
     &__text
       padding 0 46px 0 0px
+    &-photo
+      &__item
+        border-radius 8px
+        width calc(33.3% - 20px)
+      &__socials-item
+        width 48px
+        margin-right 26px
+        height 48px
+      &__positions
+        font   15/15px 'Open-Sans',sans-serif
+      &__socials-container
+        flex-direction row
+        margin-top 32px
 </style>
